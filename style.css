@@ -17,17 +17,6 @@ body
 }
 
 
-#form-container
-{
-    margin:calc(0.5*(100vh - 250px)) 0px;
-    padding: 25.5px 32px ;
-    border-radius: .25rem;
-    background-color: white;
-    align-content: center;
-    width: 25%;
-    height: 250px;
-    box-shadow: 0 0.2em 0.2em #42245d0a, 0 0.6em 3em #5d526b30;
-}
 
 button
 {
@@ -65,4 +54,57 @@ h1
     color : #EF7825;
     color : rgba(239, 120, 37, 1);
 
+}
+
+
+
+
+@media screen and 
+(min-width: 1024px)
+{
+        #form-container
+    {
+        margin:calc(0.5*(100vh - 250px)) 0px;
+        padding: 25.5px 32px ;
+        border-radius: .25rem;
+        background-color: white;
+        align-content: center;
+        width: 25%;
+        height: 250px;
+        box-shadow: 0 0.2em 0.2em #42245d0a, 0 0.6em 3em #5d526b30;
+    }
+}
+
+@media screen and 
+(min-width: 768px) and
+(max-width: 1024px)
+{
+        #form-container
+    {
+        margin:calc(0.5*(100vh - 250px)) 0px;
+        padding: 25.5px 32px ;
+        border-radius: .25rem;
+        background-color: white;
+        align-content: center;
+        width: 60%;
+        height: 250px;
+        box-shadow: 0 0.2em 0.2em #42245d0a, 0 0.6em 3em #5d526b30;
+    }
+}
+
+
+@media screen and 
+(max-width: 767px)
+{
+        #form-container
+    {
+        margin:calc(0.5*(100vh - 300px)) 0px;
+        padding: 25.5px 32px ;
+        border-radius: .25rem;
+        background-color: white;
+        align-content: center;
+        width: 80%;
+        height: 300px;
+        box-shadow: 0 0.2em 0.2em #42245d0a, 0 0.6em 3em #5d526b30;
+    }
 }
