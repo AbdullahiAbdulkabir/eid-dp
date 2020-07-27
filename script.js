@@ -15,7 +15,7 @@ function getInputValue()
     const frame = document.getElementById('frame');
     ctx.drawImage(frame,0,0);
     ctx.textAlign = 'center';
-    ctx.font = 'bold 31px BentonModDisp';
+    ctx.font = 'bold 31px Playfair Display';
     ctx.fillText(`${inputVal}`,frame.width/2,800);
 
     if(window.navigator.msSaveBlob){
@@ -24,7 +24,7 @@ function getInputValue()
         const a = document.createElement('a');
         document.body.appendChild(a);
         a.href = canvas.toDataURL();
-        a.download = 'OFI_Eid_`${inputVal}`.png';
+        a.download = 'OFI_Eid_${inputVal}.png';
         a.click();
         document.body.removeChild(a);
     }
