@@ -1,25 +1,26 @@
 function getInputValue()
 {
     const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d');    
+    const ctx = canvas.getContext('2d');
     var inputVal = document.getElementById('Mname').value;
 
-    canvas.width = 1080;
-    canvas.height = 1080;
+    canvas.width = 1024;
+    canvas.height = 1024;
 
     const frame = document.getElementById('frame');
     ctx.drawImage(frame,0,0);
     ctx.textAlign = 'center';
-    ctx.font = 'bold 31px Playfair Display';
-    ctx.fillText(`${inputVal}`,frame.width/2,800);
+    ctx.font = 'bold 61px Night Display';
+    ctx.fillStyle = "#006600";
+    ctx.fillText(`${inputVal}`,frame.width/2,435);
 
     if(window.navigator.msSaveBlob){
-        window.navigator.msSaveBlob(canvas.msToBlob(),`OFI_Eid_${inputVal}.png`);
+        window.navigator.msSaveBlob(canvas.msToBlob(),`DW_${inputVal}.png`);
     } else {
         const a = document.createElement('a');
         document.body.appendChild(a);
         a.href = canvas.toDataURL();
-        a.download = `OFI_Eid_${inputVal}.png`;
+        a.download = `i-will-be-attending-4-${inputVal}.png`;
         a.click();
         document.body.removeChild(a);
     }
