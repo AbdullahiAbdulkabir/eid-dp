@@ -10,9 +10,9 @@ function getInputValue()
     const frame = document.getElementById('frame');
     ctx.drawImage(frame,0,0);
     ctx.textAlign = 'center';
-    ctx.font = 'bold 61px Night Display';
-    ctx.fillStyle = "#006600";
-    ctx.fillText(`${inputVal}`,frame.width/2,435);
+    ctx.font = 'bold 63px Night Display';
+    ctx.fillStyle = "#006E60";
+    ctx.fillText(`${inputVal}`,frame.width/2,355);
 
     if(window.navigator.msSaveBlob){
         window.navigator.msSaveBlob(canvas.msToBlob(),`DW_${inputVal}.png`);

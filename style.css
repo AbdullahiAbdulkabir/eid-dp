@@ -22,8 +22,8 @@ body
 
 button
 {
-    background-color : #006600 !important;
-    background-color : #006600;
+    background-color : #006E60 !important;
+    background-color : #006E60;
     color: white !important;
     font-weight: bold;
     letter-spacing: 1px;
@@ -53,8 +53,8 @@ h1
     font-weight: 800;
     text-align: center;
     margin: 20px 0px;
-    color : #006600;
-    color : #006600;
+    color : #006E60;
+    color : #006E60;
 
 }
 
