@@ -1,5 +1,4 @@
-function getInputValue()
-{
+function getInputValue() {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     var inputVal = document.getElementById('Mname').value;
@@ -8,14 +7,14 @@ function getInputValue()
     canvas.height = 1024;
 
     const frame = document.getElementById('frame');
-    ctx.drawImage(frame,0,0);
+    ctx.drawImage(frame, 0, 0);
     ctx.textAlign = 'center';
-    ctx.font = 'bold 63px Night Display';
-    ctx.fillStyle = "#006E60";
-    ctx.fillText(`${inputVal}`,frame.width/2,355);
+    ctx.font = 'bold 63px Pla fair Display';
+    ctx.fillStyle = "#ffffff";
+    ctx.fillText(`${inputVal}`, frame.width / 2, 850);
 
-    if(window.navigator.msSaveBlob){
-        window.navigator.msSaveBlob(canvas.msToBlob(),`DW_${inputVal}.png`);
+    if (window.navigator.msSaveBlob) {
+        window.navigator.msSaveBlob(canvas.msToBlob(), `DW_${inputVal}.png`);
     } else {
         const a = document.createElement('a');
         document.body.appendChild(a);
