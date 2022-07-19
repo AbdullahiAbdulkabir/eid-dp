@@ -3,8 +3,8 @@ function getInputValue() {
     const ctx = canvas.getContext('2d');
     var inputVal = document.getElementById('Mname').value;
 
-    canvas.width = 1024;
-    canvas.height = 1024;
+    canvas.width = 2501;
+    canvas.height = 2500;
 
     const frame = document.getElementById('frame');
     ctx.drawImage(frame, 0, 0);
