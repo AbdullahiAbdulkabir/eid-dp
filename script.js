@@ -9,7 +9,7 @@ function getInputValue() {
     const frame = document.getElementById('frame');
     ctx.drawImage(frame, 0, 0);
     ctx.textAlign = 'center';
-    ctx.font = 'bold 63px Pla fair Display';
+    ctx.font = 'bold 63px Abhaya Libre';
     ctx.fillStyle = "#ffffff";
     ctx.fillText(`${inputVal}`, frame.width / 2, 900);
 
