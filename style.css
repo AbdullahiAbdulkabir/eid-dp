@@ -41,14 +41,14 @@ input,button
     line-height: inherit!important;
     border: 0 !important;
     border-radius: .2rem !important;
-    font-family: 'Playfair Display',serif!important;
+    font-family: 'Abhaya Libre', serif !important;
     font-size: 13px;
     box-sizing: border-box;
 }
 
 h1
 {
-    font-family: 'Playfair Display',serif!important;
+    font-family: 'Abhaya Libre', serif !important;
     font-size: 1.2rem;
     font-weight: 800;
     text-align: center;
