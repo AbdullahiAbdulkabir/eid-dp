@@ -10,7 +10,7 @@ function getInputValue() {
     ctx.drawImage(frame, 0, 0);
     ctx.textAlign = 'center';
     ctx.font = 'bold 63px Abhaya Libre';
-    ctx.fillStyle = "#ffffff";
+    ctx.fillStyle = "#80c341";
     ctx.fillText(`${inputVal}`, frame.width / 2, 1000);
 
     if (window.navigator.msSaveBlob) {
