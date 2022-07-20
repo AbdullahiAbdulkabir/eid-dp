@@ -19,7 +19,7 @@ function getInputValue() {
         const a = document.createElement('a');
         document.body.appendChild(a);
         a.href = canvas.toDataURL();
-        a.download = `i-will-be-attending-4-${inputVal}.png`;
+        a.download = `i-will-be-attending-${inputVal}.png`;
         a.click();
         document.body.removeChild(a);
     }
