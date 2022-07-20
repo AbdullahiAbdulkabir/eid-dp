@@ -11,7 +11,7 @@ function getInputValue() {
     ctx.textAlign = 'center';
     ctx.font = 'bold 63px Abhaya Libre';
     ctx.fillStyle = "#ffffff";
-    ctx.fillText(`${inputVal}`, frame.width / 2, 910);
+    ctx.fillText(`${inputVal}`, frame.width / 2, 1000);
 
     if (window.navigator.msSaveBlob) {
         window.navigator.msSaveBlob(canvas.msToBlob(), `DW_${inputVal}.png`);
